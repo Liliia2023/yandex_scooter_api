@@ -15,7 +15,7 @@ response = post_new_order(data.order_body)
 
 track_number = response.json()["track"]
 
-print(track_number)
+# print(track_number)
 
 
 # Получение заказа по трекинговому номеру
@@ -28,5 +28,5 @@ response = get_order_number(track_number)
 
 order = response.json()["order"]
 order_id = order["id"]
-print(order_id)
+# print(order_id)
 
